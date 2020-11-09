@@ -6,9 +6,9 @@ export default () => {
     const isLoggedIn = useIsLoggedIn();
     const logIn = useLogIn();    
     const logOut = useLogOut();
-    console.log(isLoggedIn);
+    //console.log(isLoggedIn);
     return (
-        <View style={{flex:"1", justifyContent:"center", alignItems:"center"}}>
+        <View style={{flex: 1, justifyContent:"center", alignItems:"center"}}>
             {isLoggedIn ? (
                 <TouchableOpacity onPress={logOut}>    
                     <Text>Log Out</Text>
